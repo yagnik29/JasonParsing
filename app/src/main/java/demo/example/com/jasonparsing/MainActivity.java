@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.list);
+        new GetData().execute();
     }
 
     public class GetData extends AsyncTask< Void, Void, Void>{
